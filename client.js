@@ -7,4 +7,8 @@ headers: { 'Content-Type': 'application/graphql' },
 body: query,
 })
 .then(res => res.json())
-.then(res => res.data.allMytables.nodes.forEach(console.log));
+// .then(res => res.data.allMytables.nodes.forEach(console.log));
+.then(function(res){ 
+    console.log( res.data.allMytables) 
+    
+} );
